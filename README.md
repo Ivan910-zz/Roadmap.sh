@@ -1,4 +1,3 @@
 Front-end Projects from Roadmap.sh
 
-
-Create a single-page HTML CV to showcase your career history.
+This repository contains front-end projects built following the roadmap.sh front-end developer path.
