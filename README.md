@@ -5,4 +5,4 @@ This repository contains front-end projects built following the roadmap.sh front
 https://roadmap.sh/projects/single-page-cv
 
 Projects List
-<ln>
+Roadmap.sh/Single-Page CV
