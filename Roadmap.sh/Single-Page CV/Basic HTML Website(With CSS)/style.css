@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Page Layout,Style,Size*/
+body {
+  padding: 0 2rem;
+}
+
+.Container {
+  border: 2px solid;
+  max-width: 55rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/*Styling NAV*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.slash {
+  margin-left: 0.625rem;
+}
+
+nav h4 {
+  text-transform: lowercase;
+}
+
+.Top-Section {
+  border-bottom: 2px solid;
+}
+
+/*Styling HEADER*/
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+header h1 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 3.125rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.375rem;
+}
+header p {
+  color: #868e96;
+  font-size: 0.875rem;
+}
+
+/*Styling MAIN*/
+main {
+  border-bottom: 2px solid;
+  display: flex;
+}
+
+main h4 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 1.625rem;
+  margin-bottom: 1rem;
+}
+
+.My-Projects {
+  border-right: 2px solid;
+}
+.My-Projects h4 {
+  padding-left: 1rem;
+}
+
+.line {
+  border: 1px solid;
+  width: 100%;
+}
+
+.LinkProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.LinkProjects a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.LinkProjects a:last-child {
+  border-bottom: none;
+}
+
+.My-WorkEXP {
+  border-right: 2px solid;
+}
+
+.WorkEXP a:nth-of-type(1) {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 1.125rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.WorkEXP {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  border-bottom: 2px solid;
+  padding: 0 1rem;
+  align-items: flex-start;
+}
+.WorkLinks {
+  padding: 0 1rem 1.5rem 0;
+}
+
+.OpenSource-Work {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.OpenSource-Work h5 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 1.25rem;
+}
+.BlueLinks {
+  text-decoration: none;
+  color: #228be6;
+}
+
+.Education {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0.5rem 1rem 0;
+}
+.Education h4 {
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.Education p {
+  padding-left: 1rem;
+}
+.Education ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.Education li::before {
+  content: "-";
+  margin-right: 0.5rem;
+}
+
+/*Article Styling*/
+article {
+  padding: 2rem;
+}
+article h4 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Box-Order {
+  display: flex;
+  gap: 1rem;
+}
+
+.Box {
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.Box p:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+.Box p:nth-of-type(2) {
+  color: #868e96;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  font-family: "Indie Flower", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+/*Link, Visited, Hover, Active of all links*/
+nav ul li a:hover {
+  color: red;
+  transition: 0.2s;
+}
+nav ul li a:hover span {
+  color: black;
+}
+
+.LinkProjects a:hover {
+  color: red;
+  transition: 0.2s;
+}
+
+.WorkEXP a:hover {
+  text-decoration: underline;
+}
+.OpenSource-Work a:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+
+/*Media*/
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  main {
+    display: grid;
+  }
+  .My-WorkEXP {
+    border: none;
+  }
+  .My-Projects {
+    border: none;
+  }
+  .My-Projects h4 {
+    text-align: center;
+    padding: 0.75rem 0;
+    border-bottom: 2px solid;
+    margin: 0;
+  }
+  .LinkProjects {
+    align-items: center;
+    background-color: #dee2e6;
+    border-bottom: 2px solid;
+  }
+  .WorkEXP h4 {
+    align-self: center;
+  }
+  .WorkEXP {
+    padding: 0;
+  }
+  .WorkLinks {
+    width: 100%;
+    border-top: 2px solid;
+    padding: 1rem;
+    background-color: #dee2e6;
+  }
+  .OpenSource-Work {
+    background-color: #dee2e6;
+    border-bottom: 2px solid;
+  }
+}
+
+@media (max-width: 640px) {
+  .Box-Order {
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 405px) {
+  .Education h4 {
+    align-self: center;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  nav {
+    padding: 0.2rem;
+  }
+  nav ul {
+    gap: 0.3rem;
+  }
+  .slash {
+    margin-left: -0.2rem;
+  }
+}
